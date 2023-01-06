@@ -1,0 +1,22 @@
+ buttons[i].addEventListener("click", function () {
+        sounds[i].play();
+       this.style.color = "blue";
+    });
+
+    document.addEventListener("keydown", function (event) {
+    if (event.key === "w") {
+        tom1.play();
+    } else if (event.key === "a") {
+        tom2.play();
+    } else if (event.key === "s") {
+        tom3.play();
+    } else if (event.key === "d") {
+        tom4.play();
+    } else if (event.key === "j") {
+        snare.play();
+    } else if (event.key === "k") {
+        crash.play();
+    } else if (event.key === "l") {
+        kick.play();
+    }
+},true);
